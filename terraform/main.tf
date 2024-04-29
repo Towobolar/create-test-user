@@ -5,5 +5,5 @@ provider "aws" {
 
 
 resource "aws_iam_user" "Tipson-Kooldec" {
-    name = "Tipson-Otuue"
+    name = "Tipson-Ote"
 }
