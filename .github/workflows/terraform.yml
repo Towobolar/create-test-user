@@ -13,7 +13,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform
+        working-directory: terraform
 
     steps:
       - name: Checkout code
@@ -44,7 +44,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform 
+        working-directory: terraform 
 
     steps:
 
