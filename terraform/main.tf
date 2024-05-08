@@ -4,9 +4,9 @@ provider "aws" {
 
 
 
-resource "aws_iam_user" "Tipson-Kooldeeec" {
-    name = "Tipson-Oteeeeeeee"
-}
+# resource "aws_iam_user" "Tipson-Kooldeeec" {
+#     name = "Tipson-Oteeeeeeee"
+# }
 
 resource "aws_s3_bucket" "foo-bucket" {
   region        = var.region
