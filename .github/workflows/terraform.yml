@@ -30,6 +30,10 @@ jobs:
   checkov_policy:
     name: checkov
     runs-on: ubuntu-latest 
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform
 
     steps: 
       - name: Install Checkov from PyPI
@@ -40,7 +44,11 @@ jobs:
  
   terraform_apply:
     name: Terraform apply
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform 
 
     steps:
       - name: Terraform Apply
