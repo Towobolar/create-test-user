@@ -26,6 +26,22 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+  checkov_policy:
+    name: checkov
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: Install Checkov from PyPI
+        run: |
+          pip install checkov
+          checkov -d /user/tf
+
+ 
+  terraform_apply:
+    name: Terraform apply
+    runs-on: ubuntu-latest 
+
+    steps:
       - name: Terraform Apply
         run: terraform apply -auto-approve
         env:
