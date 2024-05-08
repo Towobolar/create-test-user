@@ -37,7 +37,7 @@ jobs:
           pip3 install checkov
           
       - name: checkov directory    
-        run:  checkov -d /home/runner/work/create-test-user/terraform
+        run:  checkov -d /home/runner/work/create-test-user/create-test-user/terraform
 
  
   terraform_apply:
