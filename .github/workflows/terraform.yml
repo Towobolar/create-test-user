@@ -34,8 +34,10 @@ jobs:
     steps: 
       - name: Install Checkov from PyPI
         run: |
-          pip install checkov
-          checkov -d terraform
+          pip3 install checkov
+          
+      - name: checkov directory    
+        run:  pwd
 
  
   terraform_apply:
