@@ -42,17 +42,12 @@ jobs:
           directory: example/examplea
           framework: terraform      
 
-  terraform:
-    name: Terraform
+  terrafeorm:
+    name: Terreaform
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: ./terraform
-
-    steps
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
-        env:
+    steps:
+     - name: Terraform Apply
+       run: terraform apply -auto-approve
+       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
