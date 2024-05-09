@@ -39,7 +39,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: /terraform
+          directory: ./terraform
           framework: terraform      
 
   terrafeorm:
